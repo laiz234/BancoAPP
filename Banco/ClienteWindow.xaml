@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Banco"
         mc:Ignorable="d"
-         Title="Cadastro de Cliente" Height="250" Width="500">
+         Title="Cadastro de Cliente" Height="250" Width="500"> 
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="17,22,0,0" Text="Id:" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="103,22,0,0" Text="Nome:" TextWrapping="Wrap" VerticalAlignment="Top"/>
