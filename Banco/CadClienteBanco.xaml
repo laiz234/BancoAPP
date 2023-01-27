@@ -1,0 +1,19 @@
+﻿<Window x:Class="Banco.CadClienteBanco"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Banco"
+        mc:Ignorable="d"
+        Title="Vincular Cliente ao Banco" Height="250" Width="400">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="19,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Id B"/><Run Text="anco"/><Run Language="pt-br" Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="157,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Id Cliente"/><Run Language="pt-br" Text=":"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Margin="19,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="157,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="19,68,0,0" VerticalAlignment="Top"/>
+        <Button Content="Listar" HorizontalAlignment="Left" Margin="87,68,0,0" VerticalAlignment="Top"/>
+        <ListBox Margin="10,107,19,10"/>
+
+    </Grid>
+</Window>
