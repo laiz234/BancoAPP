@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Banco
 {
-    class Banco
+    public class Banco
     {
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        {
+            return $"{Id} - {Nome} ";
+        }
     }
 }

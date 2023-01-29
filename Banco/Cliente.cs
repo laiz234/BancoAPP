@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Banco
 {
-    class Cliente
+    public class Cliente
     {
-    }
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string Email { get; set; }
+        public int Cpf { get; set; }
+        public override string ToString()
+        {
+            return $"{Id} - {Nome} - {Email} - {Cpf} ";
+        }
 }
