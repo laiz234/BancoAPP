@@ -16,4 +16,6 @@ namespace Banco
         {
             return $"{Id} - {Nome} - {Email} - {Cpf} ";
         }
+    }
 }
+

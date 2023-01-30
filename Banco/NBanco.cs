@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Banco
 {
@@ -27,7 +29,7 @@ namespace Banco
         public static void Excluir(Banco b)
         {
             Abrir();
-            Bnaco x = null;
+            Banco x = null;
             foreach (Banco obj in bancos)
                 if (obj.Id == b.Id) x = obj;
             if (x != null) bancos.Remove(x);

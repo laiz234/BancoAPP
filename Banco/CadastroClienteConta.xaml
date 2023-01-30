@@ -9,7 +9,7 @@
     <Grid>
       <ListBox Name="listContas" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0" Width="370" Height="90"/>
       <ListBox Name="listClientes" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,110,0,0" Width="370" Height="90"/>
-      <Button Click="ListarClick" Content="Listar" HorizontalAlignment="Left" Margin="10,205,0,0" VerticalAlignment="Top"/>
-      <Button Click="VincularClick" Content="Vincular" HorizontalAlignment="Left" Margin="47,205,0,0" VerticalAlignment="Top"/>
+        <Button Click="ListarClick" Content="Listar" HorizontalAlignment="Left" Margin="10,205,0,0" VerticalAlignment="Top" Click="ListarClick"/>
+        <Button Click="VincularClick" Content="Vincular" HorizontalAlignment="Left" Margin="47,205,0,0" VerticalAlignment="Top" Click="VincularClick"/>
     </Grid>
 </Window>
