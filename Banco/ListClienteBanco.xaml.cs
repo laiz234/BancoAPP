@@ -22,6 +22,19 @@ namespace Banco
         public ListClienteBanco()
         {
             InitializeComponent();
+            listBancos.ItemsSource = NBanco.Listar();
+        }
+
+        private void ListarClick(object sender, RoutedEventArgs e)
+        {
+            if (listBancos.SelectedItem != null)
+            {
+                Banco b = (Banco)listBancos.SelectedItem;
+                listClientes.ItemsSource = null;
+                listClientes.ItemsSource = NCliente.Listar(b);
+            }
+            else
+                MessageBox.Show("É preciso selecionar um Banco");
         }
     }
 }

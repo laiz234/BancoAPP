@@ -11,8 +11,8 @@
         <TextBlock HorizontalAlignment="Left" Margin="157,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Id Cliente"/><Run Language="pt-br" Text=":"/></TextBlock>
         <TextBox HorizontalAlignment="Left" Margin="19,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Margin="157,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="19,68,0,0" VerticalAlignment="Top"/>
-        <Button Content="Listar" HorizontalAlignment="Left" Margin="87,68,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="_Cadastrar_" Content="Cadastrar" HorizontalAlignment="Left" Margin="19,68,0,0" VerticalAlignment="Top" Click="CadastrarClick"/>
+        <Button Content="Listar" HorizontalAlignment="Left" Margin="87,68,0,0" VerticalAlignment="Top" Click="ListarClick"/>
         <ListBox Margin="10,107,19,10"/>
 
     </Grid>

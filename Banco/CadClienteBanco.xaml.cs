@@ -23,5 +23,30 @@ namespace Banco
         {
             InitializeComponent();
         }
+
+        private void CadastrarClick(object sender, RoutedEventArgs e)
+        {
+            if (listBanco.SelectedItem != null &&
+                listClientes.SelectedItem != null)
+            {
+                Cliente c = (Cliente)listClientes.SelectedItem;
+                Banco b = (Banco)listBancos.SelectedItem;
+                NCliente.Cadastrar(c, b);
+                ListarClick(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("É preciso selecionar um cliente e um banco");
+            }
+
+        }
+
+        private void ListarClick(object sender, RoutedEventArgs e)
+        {
+            listBancos.ItemsSource = null;
+            listBancos.ItemsSource = NBanco.Listar();
+            listClientes.ItemsSource = null;
+            listClientes.ItemsSource = NCliente.Listar();
+        }
     }
 }
