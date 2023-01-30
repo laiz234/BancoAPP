@@ -22,6 +22,19 @@ namespace Banco
         public ListContaCliente()
         {
             InitializeComponent();
+            listClientes.ItemsSource = NCliente.Listar();
+        }
+
+        private void ListarClick(object sender, RoutedEventArgs e)
+        {
+            if (listClientes.SelectedItem != null)
+            {
+                Cliente c = (Cliente)listClientes.SelectedItem;
+                listContas.ItemsSource = null;
+                listContas.ItemsSource = NConta.Listar(c);
+            }
+            else
+                MessageBox.Show("É preciso selecionar um Cliente");
         }
     }
 }

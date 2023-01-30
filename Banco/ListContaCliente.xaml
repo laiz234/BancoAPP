@@ -10,6 +10,6 @@
         <TextBlock HorizontalAlignment="Left" Margin="23,10,0,0" Text="Cliente:" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Margin="23,34,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <ListBox Margin="23,96,30,26"/>
-        <Button Content="Listar Contas" HorizontalAlignment="Left" Margin="23,63,0,0" VerticalAlignment="Top"/>
+        <Button Content="Listar Contas" HorizontalAlignment="Left" Margin="23,63,0,0" VerticalAlignment="Top" Click="ListarClick"/>
     </Grid>
 </Window>
