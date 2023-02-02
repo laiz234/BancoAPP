@@ -19,8 +19,7 @@
         <Button Content="Listar" HorizontalAlignment="Left" Margin="66,73,0,0" VerticalAlignment="Top"/>
         <Button Content="Atualizar" HorizontalAlignment="Left" Margin="112,73,0,0" VerticalAlignment="Top"/>
         <Button Content="Excluir" HorizontalAlignment="Left" Margin="176,73,0,0" VerticalAlignment="Top"/>
-        <ListBox Margin="17,106,19,23"/>
-
+        <ListBox x:Name="listClientes" Margin="17,106,19,23"/>
     </Grid>
 
 </Window>

@@ -23,5 +23,32 @@ namespace Banco
         {
             InitializeComponent();
         }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void ListarClick(object sender, RoutedEventArgs e)
+        {
+            listContas.ItemsSource = null;
+            listContas.ItemsSource = NConta.Listar();
+            listClientes.ItemsSource = null;
+            listClientes.ItemsSource = NCliente.Listar();
+        }
+
+        private void VincularClick(object sender, RoutedEventArgs e)
+        {
+            if (listContas.SelectedItem != null && listClientes.SelectedItem != null)
+            {
+                Conta a = (Conta)listContas.SelectedItem;
+                Cliente.Inserir(co, c);
+                ListarClick(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("É preciso selecionar uma conta e um cliente!");
+            }
+        }
     }
 }

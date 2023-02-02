@@ -21,7 +21,7 @@ namespace Banco
             contas.Add(co);
             Salvar();
         }
-        public static List<Conta> Listar()
+        public static List<Conta> Listar(Cliente c)
         {
             Abrir();
             return contas;
@@ -32,8 +32,8 @@ namespace Banco
             foreach (Conta obj in contas)
                 if (obj.Id == co.Id)
                 {
-                    obj.IdCliente = c.IdCliente;
-                    obj.Numero = c.Numero;
+                    obj.IdCliente = co.IdCliente;
+                    obj.Numero = co.Numero;
                 }
             Salvar();
         }

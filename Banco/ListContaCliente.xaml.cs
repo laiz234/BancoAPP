@@ -25,7 +25,7 @@ namespace Banco
             listClientes.ItemsSource = NCliente.Listar();
         }
 
-        private void ListarClick(object sender, RoutedEventArgs e)
+        private void listContas_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (listClientes.SelectedItem != null)
             {
