@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Banco"
         mc:Ignorable="d"
-        Title="Agencia" Height="200" Width="300">
+        Title="Agencia" Height="196" Width="300">
     <Grid>
-
+        <MenuItem Header="Cadastros" Margin="6,5,156,146" >
+            <MenuItem>
+                <MenuItem Header="Clientes" Click="Cliente_Click" />
+                <MenuItem Header="Contas" Click="Conta_Click" />
+                <MenuItem Header="Bancos" Click="Banco_Click" />
+            </MenuItem>
+        </MenuItem>
+        <MenuItem Header="Operações" Margin="141,5,21,146">
+            <MenuItem>
+                <MenuItem Header="Cadastro de Cliente-Conta" Click="CadClienteConta_Click" />
+                <MenuItem Header="Listagem de Cliente-Conta" Click="ListClienteConta_Click" />
+                <MenuItem Header="Cadastro de Cliente-Banco" Click="CadClienteBanco_Click" />
+                <MenuItem Header="Listagem de Cliente-Banco" Click="ListClienteBanco_Click" />
+            </MenuItem>
+        </MenuItem>
+        <Button Visibility="Hidden" Click="Cliente_Click" Content="Cadastrar Cliente" HorizontalAlignment="Left" Margin="23,19,0,0" VerticalAlignment="Top"/>
+        <Button Visibility="Hidden" Click="Conta_Click" Content="Cadastrar Conta" HorizontalAlignment="Left" Margin="23,44,0,0" VerticalAlignment="Top"/>
+        <Button Visibility="Hidden" Click="Banco_Click" Content="Cadastrar Banco" HorizontalAlignment="Left" Margin="23,44,0,0" VerticalAlignment="Top"/>
+        <Button Visibility="Hidden" Click="CadClienteConta_Click" Content="Cadastro de Cliente-Conta" HorizontalAlignment="Left" Margin="23,69,0,0" VerticalAlignment="Top"/>
+        <Button Visibility="Hidden" Click="ListClienteConta_Click" Content="Listagem de Cliente-Conta" HorizontalAlignment="Left" Margin="23,69,0,0" VerticalAlignment="Top"/>
+        <Button Visibility="Hidden" Click="ListClientBanco_Click" Content="Cadastro de Cliente-Banco" HorizontalAlignment="Left" Margin="23,69,0,0" VerticalAlignment="Top"/>
+        <Button Visibility="Hidden" Click="ListClienteBanco_Click" Content="Listagem de Cliente-Banco" HorizontalAlignment="Left" Margin="23,69,0,0" VerticalAlignment="Top"/>
+        
     </Grid>
 </Window>
