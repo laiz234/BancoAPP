@@ -7,12 +7,9 @@
         mc:Ignorable="d"
         Title="Vincular Cliente ao Banco" Height="250" Width="400">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="19,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Id B"/><Run Text="anco"/><Run Language="pt-br" Text=":"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="157,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Id Cliente"/><Run Language="pt-br" Text=":"/></TextBlock>
-        <TextBox HorizontalAlignment="Left" Margin="19,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="157,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="_Cadastrar_" Content="Cadastrar" HorizontalAlignment="Left" Margin="19,68,0,0" VerticalAlignment="Top" Click="CadastrarClick"/>
-        <Button Content="Listar" HorizontalAlignment="Left" Margin="87,68,0,0" VerticalAlignment="Top" Click="ListarClick"/>
-        <ListBox x:Name="listBanco" Margin="10,107,19,10"/>
+        <ListBox Name="listBancos" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,24,0,0" Width="370" Height="67" SelectionChanged="listBancos_SelectionChanged"/>
+        <ListBox Name="listClientes" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,107,0,0" Width="370" Height="74" SelectionChanged="listClientes_SelectionChanged"/>
+        <Button Click="ListarClick" Content="Listar" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top"/>
+        <Button Click="CadastrarClick" Content="Vincular" HorizontalAlignment="Left" Margin="47,200,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

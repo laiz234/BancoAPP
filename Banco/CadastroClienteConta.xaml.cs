@@ -41,8 +41,9 @@ namespace Banco
         {
             if (listContas.SelectedItem != null && listClientes.SelectedItem != null)
             {
-                Conta a = (Conta)listContas.SelectedItem;
-                Cliente.Inserir(co, c);
+                Conta co = (Conta)listContas.SelectedItem;
+                Cliente ci = (Cliente)listClientes.SelectedItem;
+                Cliente.Vincular(co, ci);
                 ListarClick(sender, e);
             }
             else
