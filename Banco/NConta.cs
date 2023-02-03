@@ -11,6 +11,8 @@ namespace Banco
     static class NConta
     {
         private static List<Conta> contas = new List<Conta>();
+        private static IEnumerable<Cliente> clientes;
+
         public static void Inserir(Conta co)
         {
             Abrir();
@@ -68,12 +70,12 @@ namespace Banco
             xml.Serialize(f, contas);
             f.Close();
         }
-        public static List<Conta> Listar(Cliente c)
+        public static List<Cliente> Listar(Conta co)
         {
-            Abrir(); // Abre a lista com todos os alunos
-            List<Conta> lista = new List<Conta>(); // Lista de alunos da turma t
-            foreach (Conta obj in contas)
-                if (obj.Id == c.Id) lista.Add(obj);
+            Abrir();
+            List<Cliente> lista = new List<Cliente>();
+            foreach (Cliente obj in clientes)
+                if (obj.Id == co.Id) lista.Add(obj);
             return lista;
         }
     }

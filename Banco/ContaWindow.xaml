@@ -8,10 +8,10 @@
         Title="Cadastro de Conta" Height="250" Width="400">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="26,22,0,0" Text="Id:" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="115,22,0,0" Text="Cliente:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="115,22,0,0" Text="IdCliente:" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="229,22,0,0" Text="Numero da conta:" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="26,50,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="72"/>
-        <TextBox x:Name="txtCliente" HorizontalAlignment="Left" Margin="113,49,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="103"/>
+        <TextBox x:Name="txtIdCliente" HorizontalAlignment="Left" Margin="113,49,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="103"/>
         <TextBox x:Name="txtNumero" HorizontalAlignment="Left" Margin="229,48,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button Content="Inserir" HorizontalAlignment="Left" Margin="26,84,0,0" VerticalAlignment="Top" Click="Inserir_Click"/>
         <Button Content="Listar" HorizontalAlignment="Left" Margin="75,84,0,0" VerticalAlignment="Top" Click="Listar_Click_1"/>

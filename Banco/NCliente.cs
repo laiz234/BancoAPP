@@ -11,6 +11,8 @@ namespace Banco
     static class NCliente
     {
         private static List<Cliente> clientes = new List<Cliente>();
+        private static IEnumerable<AgenciaBancaria> bancos;
+
         public static void Inserir(Cliente c)
         {
             Abrir();
@@ -88,5 +90,7 @@ namespace Banco
                 if (obj.Id == b.Id) lista.Add(obj);
             return lista;
         }
+
+
     }
 }

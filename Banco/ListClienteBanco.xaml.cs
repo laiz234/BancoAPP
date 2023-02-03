@@ -27,14 +27,14 @@ namespace Banco
 
         private void ListarClick(object sender, RoutedEventArgs e)
         {
-            if (listClientes.SelectedItem != null)
+            if (listBancos.SelectedItem != null)
             {
-                Cliente c = (Cliente)listClientes.SelectedItem;
-                listBancos.ItemsSource = null;
-                listBancos.ItemsSource = NBanco.Listar();
+                AgenciaBancaria b = (AgenciaBancaria)listBancos.SelectedItem;
+                listClientes.ItemsSource = null;
+                listClientes.ItemsSource = NCliente.Listar(b);
             }
             else
-                MessageBox.Show("É preciso selecionar um Cliente");
+                MessageBox.Show("É preciso selecionar um Banco");
         }
     }
 }

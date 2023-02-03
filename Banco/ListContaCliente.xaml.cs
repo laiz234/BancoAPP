@@ -31,7 +31,7 @@ namespace Banco
             {
                 Cliente c = (Cliente)listClientes.SelectedItem;
                 listContas.ItemsSource = null;
-                listContas.ItemsSource = NConta.Listar(c);
+                listContas.ItemsSource = NConta.Listar();
             }
             else
                 MessageBox.Show("É preciso selecionar um Cliente");

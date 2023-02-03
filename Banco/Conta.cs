@@ -11,7 +11,7 @@ namespace Banco
         public int Id { get; set; }
         public int IdCliente { get; set; }
         public string Numero { get; set; }
-        public string Cliente { get; internal set; }
+        public string Cliente { get; set; }
 
         public override string ToString()
         {

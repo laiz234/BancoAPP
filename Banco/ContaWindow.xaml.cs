@@ -28,7 +28,7 @@ namespace Banco
         {
             Conta co = new Conta();
             co.Id = int.Parse(txtId.Text);
-            co.Cliente = txtCliente.Text;
+            co.IdCliente = int.Parse(txtIdCliente.Text);
             co.Numero = txtNumero.Text;
             NConta.Inserir(co);
             Listar_Click_1(sender, e);
@@ -44,7 +44,7 @@ namespace Banco
         {
             Conta co = new Conta();
             co.Id = int.Parse(txtId.Text);
-            co.Cliente = txtCliente.Text;
+            co.IdCliente = int.Parse(txtIdCliente.Text);
             co.Numero = txtNumero.Text;
             NConta.Atualizar(co);
             Listar_Click_1(sender, e);
@@ -64,7 +64,7 @@ namespace Banco
             {
                 Conta obj = (Conta)listContas.SelectedItem;
                 txtId.Text = obj.Id.ToString();
-                txtCliente.Text = obj.Cliente;
+                txtIdCliente.Text = obj.IdCliente.ToString();
                 txtNumero.Text = obj.Numero;
             }
         }
