@@ -26,7 +26,7 @@ namespace Banco
 
         private void CadastrarClick(object sender, RoutedEventArgs e)
         {
-            if (listBanco.SelectedItem != null &&
+            if (listBancos.SelectedItem != null &&
                 listClientes.SelectedItem != null)
             {
                 Cliente c = (Cliente)listClientes.SelectedItem;

@@ -24,11 +24,6 @@ namespace Banco
             InitializeComponent();
         }
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
-
         private void ListarClick(object sender, RoutedEventArgs e)
         {
             listContas.ItemsSource = null;

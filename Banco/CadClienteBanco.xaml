@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Vincular Cliente ao Banco" Height="250" Width="400">
     <Grid>
-        <ListBox Name="listBancos" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,24,0,0" Width="370" Height="67" SelectionChanged="listBancos_SelectionChanged"/>
-        <ListBox Name="listClientes" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,107,0,0" Width="370" Height="74" SelectionChanged="listClientes_SelectionChanged"/>
+        <ListBox Name="listBancos" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,24,0,0" Width="370" Height="67"/>
+        <ListBox Name="listClientes" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,107,0,0" Width="370" Height="74"/>
         <Button Click="ListarClick" Content="Listar" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top"/>
         <Button Click="CadastrarClick" Content="Vincular" HorizontalAlignment="Left" Margin="47,200,0,0" VerticalAlignment="Top"/>
     </Grid>
