@@ -38,7 +38,7 @@ namespace Banco
             {
                 Conta co = (Conta)listContas.SelectedItem;
                 Cliente ci = (Cliente)listClientes.SelectedItem;
-                Cliente.Vincular(co, ci);
+                NCliente.Vincular(co, ci);
                 ListarClick(sender, e);
             }
             else

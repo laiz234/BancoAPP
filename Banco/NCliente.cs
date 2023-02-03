@@ -70,5 +70,23 @@ namespace Banco
             f.Close();
 
         }
+        public static void Vincular(Conta co, Cliente c)
+        {
+            c.Id = c.Id;
+            Atualizar(c);
+        }
+        public static void Cadastrar(Cliente c, AgenciaBancaria b)
+        {
+            b.Id = b.Id;
+            Atualizar(c);
+        }
+        public static List<Cliente> Listar(AgenciaBancaria b)
+        {
+            Abrir();
+            List<Cliente> lista = new List<Cliente>();
+            foreach (Cliente obj in clientes)
+                if (obj.Id == b.Id) lista.Add(obj);
+            return lista;
+        }
     }
 }

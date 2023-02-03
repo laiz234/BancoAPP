@@ -30,7 +30,7 @@ namespace Banco
                 listClientes.SelectedItem != null)
             {
                 Cliente c = (Cliente)listClientes.SelectedItem;
-                Banco b = (Banco)listBancos.SelectedItem;
+                AgenciaBancaria b = (AgenciaBancaria)listBancos.SelectedItem;
                 NCliente.Cadastrar(c, b);
                 ListarClick(sender, e);
             }

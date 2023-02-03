@@ -10,14 +10,14 @@
         <TextBlock HorizontalAlignment="Left" Margin="26,22,0,0" Text="Id:" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="115,22,0,0" Text="Cliente:" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="229,22,0,0" Text="Numero da conta:" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="26,50,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="72"/>
-        <TextBox HorizontalAlignment="Left" Margin="113,49,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="103"/>
-        <TextBox HorizontalAlignment="Left" Margin="229,48,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Inserir" HorizontalAlignment="Left" Margin="26,84,0,0" VerticalAlignment="Top"/>
-        <Button Content="Listar" HorizontalAlignment="Left" Margin="75,84,0,0" VerticalAlignment="Top"/>
-        <Button Content="Atualizar" HorizontalAlignment="Left" Margin="119,84,0,0" VerticalAlignment="Top"/>
-        <Button Content="Excluir" HorizontalAlignment="Center" Margin="0,84,0,0" VerticalAlignment="Top"/>
-        <ListBox Margin="26,117,24,17"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="26,50,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="72"/>
+        <TextBox x:Name="txtCliente" HorizontalAlignment="Left" Margin="113,49,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="103"/>
+        <TextBox x:Name="txtNumero" HorizontalAlignment="Left" Margin="229,48,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Inserir" HorizontalAlignment="Left" Margin="26,84,0,0" VerticalAlignment="Top" Click="Inserir_Click"/>
+        <Button Content="Listar" HorizontalAlignment="Left" Margin="75,84,0,0" VerticalAlignment="Top" Click="Listar_Click_1"/>
+        <Button Content="Atualizar" HorizontalAlignment="Left" Margin="119,84,0,0" VerticalAlignment="Top" Click="Atualizar_Click_2"/>
+        <Button Content="Excluir" HorizontalAlignment="Center" Margin="0,84,0,0" VerticalAlignment="Top" Click="Excluir_Click_3"/>
+        <ListBox x:Name="listContas" Margin="26,117,24,17" SelectionChanged="listContas_SelectionChanged"/>
 
     </Grid>
 </Window>

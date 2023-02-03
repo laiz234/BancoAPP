@@ -21,7 +21,7 @@ namespace Banco
             contas.Add(co);
             Salvar();
         }
-        public static List<Conta> Listar(Cliente c)
+        public static List<Conta> Listar()
         {
             Abrir();
             return contas;
@@ -67,6 +67,14 @@ namespace Banco
             StreamWriter f = new StreamWriter("./contas.xml", false);
             xml.Serialize(f, contas);
             f.Close();
+        }
+        public static List<Conta> Listar(Cliente c)
+        {
+            Abrir(); // Abre a lista com todos os alunos
+            List<Conta> lista = new List<Conta>(); // Lista de alunos da turma t
+            foreach (Conta obj in contas)
+                if (obj.Id == c.Id) lista.Add(obj);
+            return lista;
         }
     }
 }
