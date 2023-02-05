@@ -33,6 +33,7 @@ namespace Banco
             c.Email = txtEmail.Text;
             NCliente.Inserir(c);
             ListarClick_Click(sender, e);
+
         }
 
         private void ListarClick_Click(object sender, RoutedEventArgs e)
